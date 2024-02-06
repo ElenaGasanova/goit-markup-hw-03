@@ -98,6 +98,8 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+
+    margin-right: 76px;
 }
 
 .nav .logo .accent {
@@ -108,8 +110,6 @@ a {
 .manu {
     display: flex;
     gap: 40px;
-
-    margin-left: 76px;
 } 
 
 .manu .link  { 
@@ -119,6 +119,8 @@ a {
     letter-spacing: 0.02em; 
     color: #2e2f42;
     text-decoration: none;   
+
+    padding: 24px 0;
 }
 
 .manu .link:hover, .link:focus  {
@@ -159,26 +161,29 @@ a {
 /* HERO */
 .hero {
     background-color: #2e2f42;
-    text-align: center;
 
     padding-bottom: 188px;
     padding-top: 188px;
 }
-/* HERO title */
 .hero .title {
+    text-align: center;
+    margin: 0;
+}
+/* HERO title */
+.hero .container .title {
     color: #ffffff;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    display: flex;
-
-    margin: 0 316px;
+    
+    max-width: 496px;
     padding-bottom: 48px;
+    margin: 0 auto;
 }
 /* HERO button */
-.hero .button {
+.hero .container .button {
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -191,7 +196,10 @@ a {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     text-align: center;
     border: 0;
-
+    display: block;
+    min-width: 169px;
+    margin: 0 auto;
+    
     padding: 16px 32px;
 }   
 
@@ -210,8 +218,17 @@ a {
     text-align: center; 
 }
 
-.wihthide {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-list .feature-item {
@@ -233,7 +250,7 @@ a {
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em; 
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .parag {
@@ -271,10 +288,11 @@ a {
     width: calc((100% - 24px * 3) / 4);
     background-color: #ffffff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-box {
-    margin: 32px auto;
+    padding: 32px 0;
 }
 
 /* SECTION 2 container title */
@@ -285,11 +303,11 @@ a {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 } 
 /* SECTION 2 container paragraph */
 .paragraph {
     text-align: center;
-    margin-top: 8px; 
 }
 
 /* SECTION 3 / Portfolio */
@@ -311,26 +329,26 @@ a {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    row-gap: 48px; 
 } 
 
-.portfolio-item {
+.portfolio-list .portfolio-item {
     border: 1px solid #e7e9fc;
     width: calc((100% - 24px * 2) / 3);
 }
 /* SECTION 3 box */
 .box {
-    padding: 32px 0;
-    margin-left: 16px;
+    padding: 32px 16px;
 }
 /* SECTION 3 box title */
-.portfolio-item .titl {
+.portfolio-item .box .titl {
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 /* SECTION 3 box paragraph */
 .portfolio-item .titl .para {
