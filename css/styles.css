@@ -12,8 +12,6 @@ body {
     line-height: 1.5;
     background-color: #ffffff;
     font-weight: 400;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 /* GENERAL */
@@ -66,7 +64,6 @@ a {
 .header {
     border-bottom: 1px solid #e7e9fc;
 
-    padding: 24px 0;
     margin: 0;
 }
 
@@ -78,13 +75,8 @@ a {
 .nav {
     display: flex;
     align-items: center;
-}
+    margin-right: 332px;
 
-.container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
 }
 
 /* HEADER logo */
@@ -113,6 +105,7 @@ a {
 } 
 
 .manu .link  { 
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -129,18 +122,11 @@ a {
 }
 
 /* HEADER address */
-.address {
-    display: flex;
-    gap: 40px;
-}
-
 .mailtel {
     list-style-type: none;  
     display: flex;
     gap: 40px; 
     align-content: flex-end;
-
-    padding-left: 332px;
 }
 
 .mailtel .addresslink {
@@ -165,10 +151,7 @@ a {
     padding-bottom: 188px;
     padding-top: 188px;
 }
-.hero .title {
-    text-align: center;
-    margin: 0;
-}
+
 /* HERO title */
 .hero .container .title {
     color: #ffffff;
@@ -179,8 +162,9 @@ a {
     letter-spacing: 0.02em;
     
     max-width: 496px;
-    padding-bottom: 48px;
     margin: 0 auto;
+    margin-bottom: 48px;
+
 }
 /* HERO button */
 .hero .container .button {
